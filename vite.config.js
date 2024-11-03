@@ -18,7 +18,7 @@ export default defineConfig({
       cert: fs.readFileSync('/etc/letsencrypt/live/misbarrancosbdesarrollo.com/fullchain.pem'),
     },
     host: '0.0.0.0',  // Permite acceso desde la red
-    port: 5173,
+    port: 443,
   },
   resolve: {
     alias: {
