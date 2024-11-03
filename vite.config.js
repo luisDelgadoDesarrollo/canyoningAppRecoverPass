@@ -8,9 +8,17 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  // server: {
+  //   host: true, // Escuchar en todas las interfaces de red
+  //   port: 5173, // Establecer el puerto a 5173
+  // },
   server: {
-    host: true, // Escuchar en todas las interfaces de red
-    port: 5173, // Establecer el puerto a 5173
+    https: {
+      key: fs.readFileSync('/etc/letsencrypt/live/misbarrancosbdesarrollo.com/privkey1.pem'),
+      cert: fs.readFileSync('/etc/letsencrypt/live/misbarrancosbdesarrollo.com/fullchain1.pem'),
+    },
+    host: '0.0.0.0',  // Permite acceso desde la red
+    port: 5173,
   },
   resolve: {
     alias: {
