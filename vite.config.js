@@ -14,8 +14,8 @@ export default defineConfig({
   // },
   server: {
     https: {
-      key: fs.readFileSync('/etc/letsencrypt/live/misbarrancosbdesarrollo.com/privkey1.pem'),
-      cert: fs.readFileSync('/etc/letsencrypt/live/misbarrancosbdesarrollo.com/fullchain1.pem'),
+      key: fs.readFileSync('/etc/letsencrypt/live/misbarrancosbdesarrollo.com/privkey.pem'),
+      cert: fs.readFileSync('/etc/letsencrypt/live/misbarrancosbdesarrollo.com/fullchain.pem'),
     },
     host: '0.0.0.0',  // Permite acceso desde la red
     port: 5173,
