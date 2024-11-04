@@ -86,7 +86,7 @@ export default {
       // Realiza la llamada al endpoint utilizando axios
       axios
         .put(
-          "https://localhost:8443/updatePassword",
+          "https://misbarrancosbdesarrollo.com:8443/updatePassword",
           {
             password: this.password,
           },
